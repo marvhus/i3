@@ -198,7 +198,7 @@ bar {
 			   cpu2.layout="cpu2.cpuload cpu2.coresload cpu2.temp" \
 			   cpu2.temp_pattern="temp1_input" \
 			   cpu2.colored="1" \
-			   disk.format="{used} ({percent:05.02f}%)" \
+			   disk.format="{left} ({percent:05.02f}%)" \
 			   memory.format="{used} ({percent:05.02f}%)" \
             -t solarized-powerline 
 
