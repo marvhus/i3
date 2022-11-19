@@ -6,8 +6,8 @@ PrimaryScreen='eDP'
 if xrandr --query | grep "$ExtraScreen connected"
 then
     xrandr \
-        --output $ExtraScreen --mode 1920x1080 --left-of $PrimaryScreen \
-        --output $PrimaryScreen --mode 1920x1080 --pos 0x0 --rotate normal --primary &
+        --output $ExtraScreen --mode 1920x1080 --left-of $PrimaryScreen --primary \
+        --output $PrimaryScreen --mode 1920x1080 --pos 0x0 --rotate normal &
     /home/martin/Doot.sh
 else
     xrandr \
